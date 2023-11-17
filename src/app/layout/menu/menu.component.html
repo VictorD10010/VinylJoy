@@ -1,0 +1,8 @@
+
+<div>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['cadastro-disco']">Cadastro de Disco</button>
+    <button mat-menu-item [routerLink]="['listagem-discos']">Listagem de Discos</button>
+  </mat-menu>
+</div>

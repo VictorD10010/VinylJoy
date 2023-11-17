@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agbalumo">
+
+<body>
+  
+<h1>{{title}}</h1>
+
+<mat-form-field appearance="fill">
+  <mat-label >Titulo</mat-label>
+  <input matInput type="text" name="titulo" [(ngModel)]="disco.titulo"> 
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Banda</mat-label>  
+  <input matInput type="text" name="banda" [(ngModel)]="disco.banda"> 
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Gênero musical</mat-label>  
+  <input matInput type="text" name="genero" [(ngModel)]="disco.genero">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Gravadora</mat-label>  
+  <input matInput type="text" name="gravadora" [(ngModel)]="disco.gravadora">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Código de barras</mat-label>  
+  <input matInput type="text" name="barCode" [(ngModel)]="disco.barCode">
+</mat-form-field><button id="teste" mat-icon-button color="primary" (click)="addDisco()">
+    <mat-icon>add</mat-icon>
+</button>
+
+<div class="grid-container">
+<mat-card *ngFor="let disco of estante" class="disc-card">
+  <button mat-icon-button color="black" class="deletebutton" (click)="rmDisco()"><mat-icon>delete_outline</mat-icon>
+  </button>
+  <mat-card-header>
+    <mat-card-title style="font-size: 25px;">
+      <mat-icon style="margin-left: 0px;">album</mat-icon>
+      {{disco.titulo}}
+    </mat-card-title> 
+    <mat-card-subtitle>Banda: {{disco.banda}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content style="font-size: 20px;">Gênero: {{disco.genero}}</mat-card-content>
+  <mat-card-content style="font-size: 20px;">Gravadora: {{disco.gravadora}}</mat-card-content>
+
+  <mat-card-content>Código de barra: {{disco.barCode}}</mat-card-content>
+</mat-card>
+</div>
+
+
+<mat-card class="lista">
+<h2>Listagem de Discos</h2>
+<ul>
+  <li *ngFor="let disco of estante">
+    <b>Título:</b> {{ disco.titulo }}<br>
+    <b>Banda:</b> {{ disco.banda }}<br>
+    <b>Gênero:</b> {{ disco.genero }}<br>
+    <b>Gravadora:</b> {{ disco.gravadora }}<br>
+    <b>BarCode:</b> {{ disco.barCode }}<br>
+  </li>
+</ul>
+</mat-card>
+
+</body>
+

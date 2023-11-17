@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Agbalumo">
+
+<body>
+<div>
+    <h1>{{ title }}</h1>
+    <ul>
+      <li *ngFor="let disco of discos">
+        <b>Título:</b> {{ disco.titulo }}<br>
+        <b>Banda:</b> {{ disco.banda }}<br>
+        <b>Gênero:</b> {{ disco.genero }}<br>
+        <b>Gravadora:</b> {{ disco.gravadora }}<br>
+        <b>BarCode:</b> {{ disco.barcode }}<br>
+      </li>
+    </ul>
+  </div>
+</body>

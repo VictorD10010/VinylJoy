@@ -1,0 +1,64 @@
+mat-form-field {
+    margin-left: 5px;
+    display: block;
+    width: 10cm;
+    padding-left: 15.5cm;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#teste {
+    margin-left: 31.5em;
+    color: whitesmoke;
+}
+h1 {
+    padding: 20px 0 20px 20px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(76, 5, 12);
+    font-family: 'Agbalumo';
+    margin-bottom: 26px;
+    color: whitesmoke;
+    }
+
+/*.disc-card {
+        max-width: 300px;
+        background-color: rgb(231, 231, 231);
+        margin-top: 10px;
+        margin-left: 11cm;
+       
+
+    }*/
+
+body {
+    height: auto;
+    min-height: 100vh;
+    background-image: url('../disco.jpg');
+    background-size: cover;
+    }
+.grid-container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px 300px;
+        max-width: 300px;
+        grid-gap: 20px;
+        margin-top: 10px;
+        margin-left: 4cm;
+
+      }
+.disc-card:hover{
+          background-color: rgb(76, 5, 12);
+          color: whitesmoke;
+      }
+
+.lista{
+    color: whitesmoke;
+    display: grid;
+    margin-top: 5cm;
+    margin-left: 50px;
+    max-width: 300px;
+    background-color: rgb(76, 5, 12);
+}
+h2{
+    text-align: center;
+}

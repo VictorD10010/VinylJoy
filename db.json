@@ -1,0 +1,18 @@
+{   
+    "discos": [
+        {   "titulo": "Thriller",
+            "barcode": "123456789",   
+            "banda": "Michael Jackson",
+            "genero": "Pop",
+            "gravadora": "UAHUAHUAHUAH"
+        },
+        {
+            "titulo": "Meteora",
+            "barcode": "12345669",   
+            "banda": "Linkin Park",
+            "genero": "Rock",
+            "gravadora": "ldkjdflkjf"
+        }
+    ]
+
+}
