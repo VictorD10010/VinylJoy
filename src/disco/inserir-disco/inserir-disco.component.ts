@@ -29,10 +29,11 @@ export class InserirDiscoComponent {
       }
 
     }
-    rmDisco(): void {
-      let discRemove = this.estante.findIndex(disco => disco.barCode === this.discoExclude.barCode);
-      this.estante.splice(discRemove, 1);
-    }
+    rmDisco(barCode?: string): void {
+      let discRemove = this.estante.findIndex(disco => disco.barCode === barCode);
+      if(discRemove >= 0){
+        this.estante.splice(discRemove, 1);
+      }
 }
 export const estante=[
   
