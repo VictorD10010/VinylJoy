@@ -35,7 +35,5 @@ export class InserirDiscoComponent {
         this.estante.splice(discRemove, 1);
       }
 }
-export const estante= [
-
-]
+}
 
