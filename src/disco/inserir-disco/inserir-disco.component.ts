@@ -38,4 +38,4 @@ export class InserirDiscoComponent {
 export const estante= [
 
 ]
-}
+
