@@ -29,7 +29,7 @@
 
 <div class="grid-container">
 <mat-card *ngFor="let disco of estante" class="disc-card">
-  <button mat-icon-button color="black" class="deletebutton" (click)="rmDisco()"><mat-icon>delete_outline</mat-icon>
+  <button mat-icon-button color="black" class="deletebutton" (click)="rmDisco(disco.barCode)"><mat-icon>delete_outline</mat-icon>
   </button>
   <mat-card-header>
     <mat-card-title style="font-size: 25px;">
