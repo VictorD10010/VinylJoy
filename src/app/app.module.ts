@@ -16,6 +16,12 @@ import { ListagemDiscoComponent } from 'src/disco/listagem-disco/listagem-disco.
 import { LayoutModule } from './layout/layout.module';
 import { DiscoModule } from 'src/disco/disco.module';
 import { RouterModule } from '@angular/router';
+import { FirestoreModule } from './firestore/firestore.module';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { firebaseConfig } from 'src/firebase.config';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [
@@ -33,7 +39,12 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     LayoutModule,
     DiscoModule,
-    RouterModule
+    RouterModule,
+    FirestoreModule,
+    AngularFireModule.initializeApp(firebaseConfig), 
+    AngularFirestoreModule, 
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
