@@ -19,9 +19,11 @@ import { RouterModule } from '@angular/router';
 import { FirestoreModule } from './firestore/firestore.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { firebaseConfig } from 'src/firebase.config';
+//import { firebaseConfig } from 'src/firebase.config';
 import {AngularFireAuthModule} from '@angular/fire/compat/auth';
 import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MensagemService } from 'src/app/shared/services/mensagem.service';
 
 @NgModule({
   declarations: [
@@ -41,12 +43,14 @@ import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
     DiscoModule,
     RouterModule,
     FirestoreModule,
-    AngularFireModule.initializeApp(firebaseConfig), 
-    AngularFirestoreModule, 
+    AngularFireModule,//.initializeApp(firebaseConfig),
+    AngularFirestoreModule,
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    MatSnackBarModule
+
   ],
-  providers: [],
+  providers: [MensagemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

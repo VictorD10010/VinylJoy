@@ -11,7 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MensagemService } from 'src/app/shared/services/mensagem.service';
 
 @NgModule({
   declarations: [ InserirDiscoComponent, ListagemDiscoComponent],
@@ -25,8 +26,10 @@ import { MatMenuModule } from '@angular/material/menu';
     MatFormFieldModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSnackBarModule
   ],
+  providers: [MensagemService],
   exports: [ InserirDiscoComponent, ListagemDiscoComponent]
 })
 export class DiscoModule { }
