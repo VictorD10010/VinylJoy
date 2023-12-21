@@ -10,7 +10,7 @@ export class MensagemService {
 
   mostrarMensagem(message: string, isError: boolean) {
     this.snackBar.open(message, 'Fechar', {
-      duration: 3000, // Adjust the duration as needed
+      duration: 3000,
       panelClass: isError ? 'error-snackbar' : 'success-snackbar'
     });
   }
