@@ -6,9 +6,6 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   providedIn: 'root'
 })
 export class MensagemService {
-  /**mostrarMensagem(arg0: string, arg1: boolean) {
-    throw new Error('Metodo não implementado.');
-  }*/
   constructor(private snackBar: MatSnackBar) {}
 
   mostrarMensagem(message: string, isError: boolean) {
